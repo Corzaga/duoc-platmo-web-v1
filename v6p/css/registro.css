@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.form {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin: 120px;
+    width: 300px;
+    text-align: center;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"]{
+
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 9999px;
+    border: 2px solid lightgray;
+    
+}
+
+.form h1{
+    font-size: 30px;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: white;
+}
+.form input[type="submit"]{
+    position: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.form input[type="submit"]:active{
+    background-color: black;
+    color:white;
+}
+
+label {
+    font-size: small;
+}
+
+.terminos-condiciones {
+    margin: 10px;
+}

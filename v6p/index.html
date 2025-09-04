@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platmo</title>
+  
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- barra navegacion -->
+  <header class="encabezado">
+    <div class="contenido-encabezado">
+    <h2>Platmo</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="/pages/quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="/">Login</a></li>
+          <li><a href="/pages/registro.html">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- contenedor de tarjetas -->
+  <div class="contenedor">
+    <!-- Tarjeta Temperatura -->
+    <div class="tarjeta" id="tarjeta-temperatura">
+      <h3>Temperatura</h3>
+      <p>29 de agosto 2025</p>
+      <div class="medida">
+        <span class="material-icons">thermostat</span>
+        <span class="valor">25°C</span>
+      </div>
+    </div>
+
+    <!-- Tarjeta Humedad -->
+    <div class="tarjeta" id="tarjeta-humedad">
+      <h3>Humedad</h3>
+      <p>13:08 horas</p>
+      <div class="medida">
+        <span class="material-icons">water_drop</span>
+        <span class="valor">60%</span>
+      </div>
+    </div>
+
+    <!-- Tarjeta informe -->
+    <div class="tarjeta" id="tarjeta-informe">
+      <h3>Informe</h3>
+      <p>Descarga de datos</p>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="tarjeta" id="tarjeta-grafico">
+      <canvas id="graficoTemp"></canvas>
+    </div>
+
+  </div>
+
+  <div class="pie-pagina">
+    <footer>Platmo - Todos los derechos reservados</footer>
+  </div>
+
+  <!-- JS externo -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
