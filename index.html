@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platmo</title>
@@ -13,6 +14,12 @@
 
   <!-- CSS externo -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- RobotoMono de GoogleFonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -56,8 +63,21 @@
     <!-- Tarjeta informe -->
     <div class="tarjeta" id="tarjeta-informe">
       <h3>Informe</h3>
-      <p>Descarga de datos</p>
+      <p>Selecciona mes</p>
+
+      <!-- ComboBox para meses -->
+      <select id="mes">
+        <option value="09">Septiembre</option>
+        <option value="08">Agosto</option>
+        <option value="07">Julio</option>
+      </select>
+
+      <!-- Botón de descarga -->
+      <a href="../misc/informe.csv" download>
+        <button type="button">Descargar</button>
+      </a>
     </div>
+
 
     <!-- Gráfico -->
     <div class="tarjeta" id="tarjeta-grafico">
