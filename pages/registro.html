@@ -12,24 +12,24 @@
     <section class="form">
         <h1>Registro</h1>
         <p>Te damos la bienvenida</p>
-        <form id="registrar"class="formulario">
-            <input type="text" name="Nombre" id="" placeholder="Nombre" required >
-            <input type="text" name="Apellido" id="" placeholder="Apellidos" required>
-            <input type="email" name="Correo" id="" placeholder="correo@ejemplo.com" required>
-            <input type="password" name="Password" id="" placeholder="Contraseña" required>
-            <input type="password" name="ConfirmationPassword" id="" placeholder="Confirmar Contraseña" required>
+        <form id="registro"class="formulario">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required >
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
+            <input type="email" name="correo" id="correo" placeholder="correo@ejemplo.com" required>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <input type="password" name="confirmationPassword" id="confirmationPassword" placeholder="Confirmar Contraseña" required>
+            <section>
+                <input type="checkbox" name="terminos" id="terminos" required >
+                <label for="">Acepta los link <a href="terminos_y_condiciones.html" class="link">terminos y condiciones</a></label>
+            </section>
+            
+            <input type="submit" value="Registrar" >
         </form>
-        <section class="terminos-condiciones">
-            <input type="checkbox" name="condition" id="terminos"  >
-            <label for="terminos">
-                Acepta los link <a href="terminos_y_condiciones.html" class="link">terminos y condiciones</a>
-            </label>
-        </section>
-        
-        <input type="submit" value="Registrar" >
+
+        <a href="../index.html">Volver al inicio</a>
             
     </section>
-    <script src="js/script.js"></script>
+    <script src="../js/registro.js" defer></script>
 
 </body>
 
