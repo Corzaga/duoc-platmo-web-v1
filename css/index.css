@@ -34,6 +34,7 @@ body {
 .menu ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 20px;
     margin: 0;
     padding: 0;
@@ -45,8 +46,16 @@ body {
     font-weight: bold;
 }
 
-.menu li:hover {
-  transform: scale(1.05);
+/* oton de login */
+#login {
+    border-radius: 99999px;
+    padding: 5px 20px;
+    border: 2px solid #2563eb;
+}
+
+#login:hover {
+    background-color: #2563eb;
+    color: white;
 }
 
 /* ------------------------------------------------------------ */
@@ -130,57 +139,6 @@ body {
   font-size: smaller;
 }
 
-/* ------------------------------------------------------------ */
-
-/* media queries para celular */
-
-@media (max-width: 768px) {
-
-  /* Barra de navegación */
-  .contenido-encabezado {
-    flex-direction: column;   /* En columna en vez de fila */
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .menu ul {
-    flex-direction: column;   /* Menú apilado */
-    gap: 10px;
-    width: 100%;
-  }
-
-  .menu li {
-    text-align: left;
-  }
-
-  /* Contenedor de tarjetas */
-  .contenedor {
-    grid-template-columns: 1fr;  /* Una sola columna */
-    margin: 20px;
-  }
-
-  /* Tarjetas */
-  .tarjeta {
-    width: 100%;       /* Que ocupen el ancho disponible */
-    padding: 16px;
-  }
-
-  /* Gráfico */
-  #tarjeta-grafico {
-    grid-column-start: auto;
-    grid-column-end: auto;
-    width: 100%;
-    height: 200px;     /* Menos alto para móviles */
-  }
-
-  /* Footer */
-  .pie-pagina {
-    margin: 10px;
-    font-size: 0.8rem;
-  }
-}
-
-
 /* tarjeta informe */
 
 /* estilo general del combobox */
@@ -212,4 +170,50 @@ body {
 
 #tarjeta-informe button:hover {
   background-color: #1d4ed8; /* azul más oscuro al pasar el mouse */
+}
+
+/* ------------------------------------------------------------ */
+
+/* media queries para celular */
+
+@media (max-width: 768px) {
+
+  /* barra de navegacion */
+  .contenido-encabezado {
+    flex-direction: column;   /* En columna en vez de fila */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;   /* Menú apilado */
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* contenedor de tarjetas */
+  .contenedor {
+    display: grid;
+    grid-template-columns: auto%;  /* Una sola columna */
+  }
+
+  /* tarjetas */
+  .tarjeta {
+    width: 90%;       /* que ocupen el ancho disponible */
+    padding: 16px;
+  }
+
+  /* grafico */
+  #tarjeta-grafico {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    width: 90%;
+    height: 200px;     /* menos alto para móviles */
+  }
+
+  /* footer */
+  .pie-pagina {
+    margin: 10px;
+    font-size: 0.8rem;
+  }
 }
